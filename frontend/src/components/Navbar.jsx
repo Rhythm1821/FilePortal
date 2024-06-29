@@ -15,7 +15,7 @@ import Button from '@mui/material/Button';
 import { Fab, MenuItem } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import { Link, useNavigate } from 'react-router-dom';
-import { useTheme } from '@mui/material/styles'; // Import useTheme hook to access theme
+import { useTheme } from '@mui/material/styles';
 import { useAuth } from '../contexts/AuthContext';
 
 const navItems = ['Home', 'About', 'Files'];
@@ -27,7 +27,7 @@ function Navbar(props) {
   const open = Boolean(anchorEl);
   const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
-  const theme = useTheme(); // Access the theme object
+  const theme = useTheme();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);

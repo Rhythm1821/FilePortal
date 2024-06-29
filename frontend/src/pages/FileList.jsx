@@ -2,9 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Container, Typography, List, ListItem, ListItemText, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import api from '../api';
+import Toast from '../components/Toast';
 
 export default function FileList() {
     const [files, setFiles] = useState([]);
+    const [toastOpen, setToastOpen] = useState(false);
+    const [toastMessage, setToastMessage] = useState('');
+    const [toastSeverity, setToastSeverity] = useState('success');
 
     const fetchFiles = async () => {
         try {
@@ -20,8 +24,14 @@ export default function FileList() {
             const res = await api.delete(`files/${id}/`);
             setFiles(files.filter(file => file.id !== id));
             console.log("File deleted successfully:", res.data);
+            setToastSeverity('success');
+            setToastMessage('File deleted successfully');
+            setToastOpen(true);
         } catch (error) {
             console.log("Error deleting file:", error);
+            setToastSeverity('error');
+            setToastMessage('Failed to delete file');
+            setToastOpen(true);
         }
     };
 
@@ -29,10 +39,23 @@ export default function FileList() {
         navigator.clipboard.writeText(fileUrl)
             .then(() => {
                 console.log("Link copied to clipboard");
+                setToastSeverity('success');
+                setToastMessage('Link copied to clipboard');
+                setToastOpen(true);
             })
             .catch(err => {
                 console.error("Could not copy text: ", err);
+                setToastSeverity('error');
+                setToastMessage('Failed to copy link');
+                setToastOpen(true);
             });
+    };
+
+    const handleToastClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+        setToastOpen(false);
     };
 
     useEffect(() => {
@@ -79,7 +102,7 @@ export default function FileList() {
                                     '&:hover': {
                                         backgroundColor: 'darkred'
                                     }
-                                }} // Red button with white text
+                                }}
                             >
                                 Delete
                             </Button>
@@ -87,6 +110,12 @@ export default function FileList() {
                     </ListItem>
                 ))}
             </List>
+            <Toast 
+                open={toastOpen} 
+                onClose={handleToastClose} 
+                message={toastMessage} 
+                severity={toastSeverity} 
+            />
         </Container>
     );
 }
