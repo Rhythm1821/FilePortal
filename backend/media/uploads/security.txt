@@ -1,0 +1,25 @@
+### Security Topics to Prepare
+
+1. Authentication ✔
+2. Authorization ✔
+3. Encryption (Symmetric and Asymmetric)
+4. Hashing ✔
+5. Public Key Infrastructure (PKI)
+6. SSL/TLS
+7. OAuth ✔
+8. JWT (JSON Web Tokens) ✔
+9. SAML (Security Assertion Markup Language)
+10. CSRF (Cross-Site Request Forgery) ✔
+11. XSS (Cross-Site Scripting)
+12. SQL Injection
+13. Firewall
+14. Intrusion Detection Systems (IDS)
+15. Intrusion Prevention Systems (IPS)
+16. Secure Coding Practices
+17. Data Privacy 
+18. Network Security
+19. Endpoint Security
+20. Incident Response
+21. Security Auditing and Monitoring
+22. Penetration Testing
+23. Security Policies and Compliance (e.g., GDPR, HIPAA)

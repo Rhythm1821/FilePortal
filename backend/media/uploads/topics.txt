@@ -1,0 +1,13 @@
+Data Structures (Arrays, Linked Lists, Stacks, Queues, Trees, Graphs) ✔
+Algorithms (Sorting, Searching, Dynamic Programming, Graph Algorithms) ✔
+Databases (SQL, NoSQL, Indexing, Transactions)
+System Design (Scalability, Load Balancing, Caching)
+Networking (HTTP/HTTPS, TCP/IP, RESTful APIs)
+Concurrency (Multithreading, Synchronization, Deadlock)
+Design Patterns (Singleton, Factory, Observer, etc.)
+Security (Authentication, Authorization, Encryption) ✔
+Version Control (Git) ✔
+Testing (Unit Testing, Integration Testing, TDD)
+Operating Systems (Processes, Threads, Memory Management)
+Cloud Services (AWS, Azure, Google Cloud) ✔
+Containerization (Docker, Kubernetes) ✔
