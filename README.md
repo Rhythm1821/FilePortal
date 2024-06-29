@@ -42,6 +42,8 @@ Start the frontend development server:
 npm run dev
 ```
 
+## Open a new terminal
+
 ## Backend Setup
 
 Navigate to the backend directory:
