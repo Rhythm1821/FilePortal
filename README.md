@@ -1,8 +1,19 @@
 # FilePortal
 
 FilePortal is a web-based file management system built with React and Django. 
-It provides a platform for users to manage files with features including 
-authentication, file uploading, deletion, and sharing.
+
+## Features
+
+• Authentication: Complete user authentication system. \
+• File Upload: Allows users to upload files securely. \
+• File Deletion: Provides functionality to delete files. \
+• File Sharing: Implements sharing functionality for files.
+
+## Technologies Used
+
+• Frontend: React, Material-UI \
+• Backend: Django, Django REST Framework \
+• Database: SQLite (for development)
 
 ## Installation
 
@@ -47,16 +58,3 @@ python3 manage.py runserver
 ```
 
 Open your web browser and go to localhost:5173 to access FilePortal.
-
-## Features
-
-• Authentication: Complete user authentication system. \
-• File Upload: Allows users to upload files securely. \
-• File Deletion: Provides functionality to delete files. \
-• File Sharing: Implements sharing functionality for files.
-
-## Technologies Used
-
-• Frontend: React, Material-UI \
-• Backend: Django, Django REST Framework \
-• Database: SQLite (for development)
