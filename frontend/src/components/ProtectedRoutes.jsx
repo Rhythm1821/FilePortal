@@ -1,8 +1,7 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import {jwtDecode} from 'jwt-decode';
 import { useAuth } from '../contexts/AuthContext'
-import api from '../api'; 
 
 const ProtectedRoutes = ({ children }) => {
   const { isAuthenticated, setIsAuthenticated, refresh_token } = useAuth();
