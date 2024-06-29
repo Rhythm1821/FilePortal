@@ -50,13 +50,13 @@ Open your web browser and go to localhost:5173 to access FilePortal.
 
 ## Features
 
-• Authentication: Complete user authentication system.
-• File Upload: Allows users to upload files securely.
-• File Deletion: Provides functionality to delete files.
+• Authentication: Complete user authentication system. \
+• File Upload: Allows users to upload files securely. \
+• File Deletion: Provides functionality to delete files. \
 • File Sharing: Implements sharing functionality for files.
 
 ## Technologies Used
 
-• Frontend: React, Material-UI
-• Backend: Django, Django REST Framework
+• Frontend: React, Material-UI \
+• Backend: Django, Django REST Framework \
 • Database: SQLite (for development)
