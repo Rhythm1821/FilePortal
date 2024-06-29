@@ -23,6 +23,11 @@ Clone the repository:
 git clone https://github.com/Rhythm1821/FilePortal
 ```
 
+## Navigate to the Project Directory
+```bash
+cd FilePortal
+```
+
 ## Frontend Setup
 
 Navigate to the frontend directory and install dependencies:
